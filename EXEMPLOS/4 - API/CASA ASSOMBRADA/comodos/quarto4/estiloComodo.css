@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/bg.png);
+  position: relative;
+}
+.lareira{
+  position: absolute;
+  top: 233px;
+  left: 271px;
+  cursor: pointer;
+}
+.moeda2{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.retrato{
+    left: 120px;
+    top: 70px;
+    position: absolute;
+    cursor: pointer;
+  }
+.anim-lareira{
+  animation: lareira 2s;
+}
+.anim-moeda{
+  animation: moeda 2s;
+}
+.anim-retrato{
+  animation: retrato 2s;
+}
+.anim-abajur{
+  animation: abajur 2s;
+}
+
+@keyframes lareira {
+  0%{transform: rotate(0deg);
+    left: 0px;
+  }
+    50%{transform: rotate(180deg);
+    left: 300px;
+  }
+  100%{ transform: rotate(360deg);
+  left: 400px;}
+}
+@keyframes moeda {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+@keyframes retrato{
+  0%{
+    transform: rotate(160deg);
+  }
+  50%{
+    transform: rotate(80deg);
+    }
+  100%{
+    transform: rotate(40deg);
+  }
+
+}

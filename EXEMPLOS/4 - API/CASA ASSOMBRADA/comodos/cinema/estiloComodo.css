@@ -1,0 +1,129 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/bg.png);
+  position: relative;
+}
+.jason {
+  position: absolute;
+  left: 710px;
+  top: 470px;
+  cursor: pointer;
+}
+.moeda2{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.anim-jason{
+  animation: jason 2s;
+}
+.anim-ingresso{
+  animation: ingresso 2s;
+}
+.anim-capa{
+  animation: capa 2s;
+}
+.anim-corda {
+  animation: corda 2s;
+}
+.anim-oculos {
+  animation: oculos 2s;
+}
+.uuu{
+  position: relative;
+}
+.moco {
+  position: absolute;
+  left:  162px;
+  top: 125px;
+  cursor: pointer;
+}
+.arlequina {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.capa {
+  position: absolute;
+  left: 510px;
+  top: 520px;
+  cursor: pointer;
+}
+.corda {
+  position: absolute;
+  left: 45px;
+  top: 130px;
+  cursor: pointer;
+}
+.fita {
+  position: absolute;
+  left: 345px;
+  top: 510px;
+  cursor: pointer;
+}
+.ingresso {
+  position: absolute;
+  left: 300px;
+  top: 470px;
+  cursor: pointer;
+}
+.eleven {
+  position: absolute;
+  left: 5px;
+  top: 400px;
+  cursor: pointer;
+}
+.oculos{
+  position: absolute;
+  left: 80px;
+  top: 487px;
+  cursor: pointer;
+}
+.palhaco {
+  position: absolute;
+  left: 690px;
+  top: 385px;
+  cursor: pointer;
+  pointer-events: none;
+}
+.palhacobranco {
+  position: absolute;
+  left: 60px;
+  top: 357px;
+  cursor: pointer;
+  pointer-events: none;
+}
+.velho {
+  position: absolute;
+  left: 200px;
+  top: 440px;
+  cursor: pointer;
+}
+
+@keyframes jason {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes ingresso {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+@keyframes capa {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+@keyframes oculos {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+@keyframes corda {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}

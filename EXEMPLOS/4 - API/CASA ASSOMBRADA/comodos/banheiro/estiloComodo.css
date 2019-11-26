@@ -1,0 +1,99 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/bg.png);
+  position: relative;
+  overflow: hidden;
+}
+.faca{
+  position: absolute;
+  top: 460px;
+  left: 310px;
+  cursor: pointer;
+}
+.rato{
+  position: absolute;
+  top: 399px;
+  left: 700px;
+  cursor: pointer;
+}
+.mangual{
+  position: absolute;
+  top:485px;
+  left:10px;
+  transform: rotate(-20deg);
+  cursor: pointer;
+}
+.machado{
+  position: absolute;
+  top: 98px;
+  left: 294px;
+  transform: rotate(-78deg);
+  cursor: pointer;
+}
+.saw{
+  position: absolute;
+  top: 140px;
+  left: 560px;
+  transform: rotate(-7deg);
+  cursor: pointer;
+}
+.crossbow{
+  position: absolute;
+  top: 25px;
+  left: 465px;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+
+.anim-saw{
+  animation: saw 2s;
+}
+@keyframes saw {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+.anim-faca{
+  animation: faca 2s;
+}
+@keyframes faca {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+.anim-mangual{
+  animation: mangual 2s;
+}
+@keyframes mangual {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+.anim-machado{
+  animation: machado 2s;
+}
+@keyframes machado {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+
+.anim-crossbow{
+  animation: crossbow 2s;
+}
+@keyframes crossbow {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+.anim-rato{
+  animation: crossbow 2s;
+}
+@keyframes rato {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}

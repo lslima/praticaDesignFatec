@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylegame.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+        <div class="cont-comodo">
+              <div>
+                <img src="images/help.gif" alt="" class="help" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro">
+                </audio>
+              </div>
+              <div>
+                <img src="images/sword.gif" alt="" class="sword" id="giro" onclick="giro()">
+                <audio src="sounds/gargalhada.mp3 " id="s-lareira">
+              </div>
+              <div>
+                <img src="images/chain.gif" alt="" class="chain" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/corrente.gif" alt="" class="corrente" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/corvo.gif" alt="" class="corvo" id="erro" onclick="erro()">
+               <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/escudo.gif" alt="" class="escudo" id="shield" onclick="shield()">
+               <audio src="sounds/gargalhada.mp3" id="s-shield"></audio>
+              </div>
+              <div>
+                <img src="images/key.gif" alt="" class="key" id="up" onclick="up()">
+                <audio src="sounds/gargalhada.mp3"id="s-moeda"></audio>
+              </div>
+              <div>
+                <img src="images/garra.gif" alt="" class="garra" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/mapa.gif" alt="" class="mapa" id="mapa" onclick="mapa()">
+                <audio src="sounds/maroto.mp3"id="s-mapa"></audio>
+              </div>
+              <div>
+                <img src="images/rato.gif" alt="" class="rato" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/sangue.gif" alt="" class="sangue" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/tcoha.gif" alt="" class="tocha" id="tocha" onclick="tocha()">
+               <audio src="sounds/maroto.mp3"id="s-tocha"></audio>
+              </div>
+              <div>
+                <img src="images/nome.png" alt="" class="nome" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/armor.gif" alt="" class="armor" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/head.gif" alt="" class="head" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/spider.png" alt="" class="spider" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+              <div>
+                <img src="images/livro.png" alt="" class="livro" id="erro" onclick="erro()">
+                <audio src="sounds/errou.m4a" id="s-erro"></audio>
+              </div>
+            </div>
+          </div>
+
+           <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtLareira">espada</p>
+          <p id="txtMoeda">chave</p>
+          <p id="txtshield">escudo</p>
+          <p id="txttocha">tocha</p>
+          <p id="txtmapa">mapa</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" loop autoplay>
+      </audio>
+      <script>
+        function giro(){
+          var elemento = document.getElementById("giro");
+          elemento.classList.toggle("anim-giro");
+
+          var elementoTxt = document.getElementById("txtLareira");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-lareira").play();
+        }
+        function up(){
+          var elemento = document.getElementById("up");
+          elemento.classList.toggle("anim-up");
+
+          var elementoTxt = document.getElementById("txtMoeda");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-moeda").play();
+        }
+         function shield(){
+          var elemento = document.getElementById("shield");
+          elemento.classList.toggle("anim-shield");
+
+          var elementoTxt = document.getElementById("txtshield");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-shield").play();
+        }
+        function mapa(){
+          var elemento = document.getElementById("mapa");
+          elemento.classList.toggle("anim-mapa");
+
+          var elementoTxt = document.getElementById("txtmapa");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-mapa").play();
+        }
+        function tocha(){
+        var elemento = document.getElementById("tocha");
+          elemento.classList.toggle("anim-tocha");
+
+          var elementoTxt = document.getElementById("txttocha");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-tocha").play();
+        }
+        function erro(){
+          var elemento = document.getElementById("erro")
+          elemento.classList.toggle("anim-erro");
+
+          document.getElementById("s-erro").play();
+        }
+      </script>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+ width: 800px;
+  height: 600px;
+  background: url(images/bg.png);
+  position: relative;
+}
+.anim-lagarto{
+  animation: lagarto 2s;
+}
+.anim-ferradura{
+  animation: ferradura 2s;
+}
+.anim-agulha{
+  animation: agulha 2s;
+}
+.anim-cachimbo{
+  animation: chachimbo 2s;
+}
+.anim-lobisomen{
+  animation: lobisomen 2s;
+}
+.anim-portao{
+  animation: portao 2s;
+}
+
+
+.celeiro{
+position: absolute;
+top: 0px;
+}
+
+.lobo{
+position: absolute;
+top: 95px;
+left: 80px;
+}
+
+.portao{
+position: absolute;
+top: 20px;
+left: 40px;
+}
+
+.ferradura{
+position: absolute;
+top: 500px;
+left: 500px;
+}
+
+.tronco{
+position: absolute;
+top: -15px;
+left: 465px;
+}
+
+.feno{
+position: absolute;
+top: 295px;
+left:100px;
+}
+
+.feno2{
+position: absolute;
+top: 400px;
+left: 34px;
+}
+
+.feno1{
+position: absolute;
+top: 350px;
+left:150px;
+}
+
+.banco{
+position: absolute;
+top: 420px;
+left:590px;
+}
+
+.cachimbo{
+position: absolute;
+top: 50px;
+left:30px;
+}
+
+.agulha{
+position: absolute;
+top: 220px;
+left:70px;
+}
+
+.linha{
+position: absolute;
+top: 440px;
+left:134px;
+}
+
+.saci{
+position: absolute;
+top: 320px;
+left:600px;
+}
+
+.lagarto{
+position: absolute;
+top: 310px;
+left:640px;
+}
+
+
+
+
+@keyframes lagarto{
+  0%{transform: scale(1);}
+  50%{transform: scale(5);}
+  100%{ transform: scale(1);}
+  }
+
+  @keyframes ferradura{
+  0%{transform: scale(1);}
+  50%{transform: scale(5);}
+  100%{ transform: scale(1);}
+  }
+
+  @keyframes agulha{
+  0%{transform: scale(1);}
+  50%{transform: scale(5);}
+  100%{ transform: scale(1);}
+  }
+
+  @keyframes cachimbo{
+  0%{transform: scale(1);}
+  50%{transform: scale(5);}
+  100%{ transform: scale(1);}
+  }
+
+  @keyframes lobisomen{
+  0%{transform: scale(1);}
+  50%{transform: scale(5);}
+  100%{ transform: scale(1);}
+  }
+
+  @keyframes portao{
+  0%{
+      top: 32px;
+      left: 60px;}
+
+  50%{
+    left: 600px;}
+
+  100%{
+    top: 32px;
+    left: 60px;}
+}

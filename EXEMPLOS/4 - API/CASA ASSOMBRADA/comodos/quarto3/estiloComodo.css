@@ -1,0 +1,155 @@
+body{ margin: 0; }
+
+ .cont-comodo{
+width: 800px;
+height: 600px;
+background:url(images/bg.png);
+position: relative; }
+
+.cavaleiro{
+position: absolute;
+left: 306px;
+top: 181px;
+}
+
+.esqueletosentado{
+position: absolute;
+left: 709px;
+top: 399px;}
+
+.mancha1{
+position: absolute;
+left: 0px;
+top: 0px;}
+
+.mancha2{
+position: absolute;
+left: 256px;
+top: 0px;}
+
+.mancha3{
+position: absolute;
+left: 744px;
+top: 7px;}
+
+.sapato{
+position: absolute;
+left: 37px;
+top: 335px;}
+
+.lustre{
+position: absolute;
+left: 405px;
+top: 0px;}
+
+.sangue1{  position: absolute;
+left: 0px;
+top: 550px;}
+
+.sangue2{position: absolute;
+left: 175px;
+top: 550px;}
+
+.sangue3{
+position: absolute;
+left: 737px;
+top: 530px;}
+
+.sangue4{
+position: absolute;
+left: 536px;
+top: 530px;}
+
+.sangue5{
+position: absolute;
+left: 340px;
+top: 520px;}
+
+.quadro{  position: absolute;
+left: 458px;
+top: 187px;
+cursor: pointer;}
+
+.mumia{
+position: absolute;
+left: 508px;
+top: 396px;
+cursor: pointer;}
+
+.zumbi1{
+position: absolute;
+left: 133px;
+top: 387px;}
+
+.cadeira{
+position: absolute;
+left: 693px;
+top: 426px;}
+
+.esqueleto1{
+position: absolute;
+left: 0px;
+top: 230px;
+cursor: pointer;}
+
+.cranio{
+  position: absolute;
+  left: 56px;
+  top: 111px;
+cursor: pointer;}
+
+.dentadura{
+  position: absolute;
+  left: 97px;
+  top: 311px;
+cursor: pointer;}
+
+.esqueleto2{
+  position: absolute;
+  left: 458px;
+  top: 270px;}
+
+.anim-dentadura{
+  animation: dentadura 2s forwards;
+}
+
+.anim-cranio{
+  animation: cranio 2s forwards;
+}
+
+.anim-esqueleto1{
+  animation: esqueleto1 2s forwards;
+}
+
+.anim-mumia{
+  animation: mumia 2s forwards;
+}
+
+.anim-quadro{
+  animation: quadro 2s forwards;
+}
+
+@keyframes dentadura {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg); opacity: 0;}
+}
+@keyframes cranio{
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg); opacity: 0;}
+}
+
+@keyframes esqueleto1{
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg); opacity: 0;}
+}
+
+@keyframes mumia{
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg); opacity: 0;}
+}
+
+@keyframes quadro{
+  0%{transform: rotate(0deg);}
+  1%{filter: invert(100%);}
+  100%{ transform: rotate(0); opacity: 0;}
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio src="sounds/ventoBg.mp3" loop autoplay>
+    </audio>
+    <div class="container">
+      <div class="comodo">
+
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+
+            <div class="">
+              <img src="images/uuu.png" alt="Imagem não encontrada" class="uuu">
+            </div>
+            <div class="">
+
+            </div>
+
+            <div class="">
+              <img src="images/capa.png" alt="Imagem não encontrada" class="capa" id="capa" onclick="capa()">
+              <audio src="sounds/jason.mp3" id="s-capa">
+                Seu navegador não suporta elementos de audio
+              </audio>
+            </div>
+            <div class="">
+              <img src="images/corda.png" alt="Imagem não encontrada" class="corda" id="corda" onclick="corda()">
+              <audio src="sounds/jason.mp3" id="s-corda">
+                Seu navegador não suporta elementos de audio
+              </audio>
+            </div>
+            <div class="">
+              <img src="images/fita-cassete.png" alt="Imagem não encontrada" class="fita">
+            </div>
+            <div class="">
+              <img src="images/ingresso.png" alt="Imagem não encontrada" id="ingresso" class="ingresso" onclick="ingresso()">
+              <audio src="sounds/jason.mp3" id="s-ingresso">
+                Seu navegador não suporta elementos de audio
+              </audio>
+            </div>
+            <div class="">
+              <img src="images/jason.png" alt="Imagem não encontrada" class="jason" id="jason" onclick="jason()">
+              <audio src="sounds/jason.mp3" id="s-jason">
+                Seu navegador não suporta elementos de audio
+              </audio>
+            </div>
+            <div class="">
+              <img src="images/ll.png" alt="Imagem não encontrada" class="eleven">
+            </div>
+            <div class="">
+              <img src="images/blas.png" alt="Imagem não encontrada" class="moco">
+            </div>
+            <div class="">
+              <img src="images/oculos.png" alt="Imagem não encontrada" class="oculos" id="oculos" onclick="oculos()">
+              <audio src="sounds/jason.mp3" id="s-oculos">
+                Seu navegador não suporta elementos de audio
+              </audio>
+            </div>
+            <div class="">
+              <img src="images/palhaco.png" alt="Imagem não encontrada" class="palhaco">
+            </div>
+            <div class="">
+              <img src="images/palhacobranco.png" alt="Imagem não encontrada" class="palhacobranco">
+            </div>
+            <div class="">
+              <img src="images/velho.png" alt="Imagem não encontrada" class="velho">
+            </div>
+
+
+
+              <div>
+                <img src="" alt="" class="jason" id="jason" onclick="jason()">
+
+              </div>
+              <div>
+                <img src="" alt="" class="moeda2" id="moeda" onclick="moeda()">
+                <audio src="sounds/trem.mp3" id="s-moeda">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtJason">Máscara do jason.</p>
+          <p id="txtingresso">Ingresso de cinema</p>
+          <p id="txtCapa">Capa do drácula</p>
+          <p id="txtOculos">Óculos 3D</p>
+          <p id="txtCorda">Corda</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <script>
+        function jason(){
+          var elemento = document.getElementById("jason");
+          elemento.classList.toggle("anim-jason");
+
+          var elementoTxt = document.getElementById("txtJason");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-jason").play();
+        }
+        function ingresso(){
+          var elemento = document.getElementById("ingresso");
+          elemento.classList.toggle("anim-ingresso");
+
+          var elementoTxt = document.getElementById("txtingresso");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-ingresso").play();
+        }
+        function capa(){
+          var elemento = document.getElementById("capa");
+          elemento.classList.toggle("anim-capa");
+
+          var elementoTxt = document.getElementById("txtCapa");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-capa").play();
+        }
+        function oculos(){
+          var elemento = document.getElementById("oculos");
+          elemento.classList.toggle("anim-oculos");
+
+          var elementoTxt = document.getElementById("txtOculos");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-oculos").play();
+        }
+        function corda(){
+          var elemento = document.getElementById("corda");
+          elemento.classList.toggle("anim-corda");
+
+          var elementoTxt = document.getElementById("txtCorda");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-corda").play();
+        }
+
+
+
+      </script>
+  </div>
+  </body>
+</html>

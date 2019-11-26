@@ -1,0 +1,111 @@
+body{
+  margin: 0;
+  cursor: url(images/Cursor1.png),auto;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/fundo.png);
+  position: relative;
+  animation: LuzPisca 5s infinite;}
+
+.Faca
+{position: absolute;
+ left: 380px;
+ top: 500px;
+ width: 80px;
+ height: 30px;}
+
+.Carta
+{position: absolute;
+ width: 60px;
+ height: 20px;
+ left: 180px;
+ top: 370px;}
+
+ .Vinho
+ {position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 745px;
+  top: 500px;}
+
+ .Caveira
+ {position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 280px;
+  top: 190px;}
+
+ .Chave
+ {position: absolute;
+  width: 30px;
+  height: 15px;
+  left: 580px;
+  top: 346px;}
+
+.anim-Global{
+  animation: Global 2s forwards;}
+
+.FromHellLetter
+{position: absolute;
+ width: 330px;
+ height: 500px;
+ left: -200px;
+ top: -200px;
+ opacity: 0;}
+
+.anim-Carta
+{animation: Carta 2s;}
+
+@keyframes Carta
+{0%{opacity: 0;
+   left: -200px;
+   top: -200px;
+   z-index: 1;}
+1%{opacity: 0;
+    left: 30%;
+    top: 20%;
+    z-index: 1;}
+2%{opacity: 1;
+   left: 30%;
+   top: 20%;
+   z-index: 1;}
+50%{opacity: 0.8;
+    left: 30%;
+    top: 20%;
+    z-index: 1;}
+100%{opacity: 1;
+     left: 30%;
+     top: 20%;
+     z-index: 1;}}
+
+@keyframes Global
+{0%{transform: scale(1);}
+ 50%{transform: scale(2);}
+ 100%{transform: scale(3);
+      opacity: 0;
+      animation-timing-function: cubic-bezier(0, 0, 0.57, -0.15);}}
+
+@keyframes LuzPisca
+{0%{opacity: 0.4;}
+ 5%{opacity: 0.4;}
+ 10%{opacity: 0.4;}
+ 15%{opacity: 0.4;}
+ 20%{opacity: 0.4;}
+ 25%{opacity: 0.4;}
+ 30%{opacity: 0.6;}
+ 35%{opacity: 0.4;}
+ 40%{opacity: 0.4;}
+ 45%{opacity: 0.4;}
+ 50%{opacity: 0.4;}
+ 55%{opacity: 0.4;}
+ 60%{opacity: 0.4;}
+ 65%{opacity: 0.4;}
+ 70%{opacity: 0.6;}
+ 75%{opacity: 0.4;}
+ 80%{opacity: 0.4;}
+ 85%{opacity: 0.4;}
+ 90%{opacity: 0.4;}
+ 95%{opacity: 0.4;}
+ 100%{opacity: 0.4;}}

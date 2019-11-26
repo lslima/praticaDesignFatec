@@ -1,0 +1,165 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/bg.png);
+  position: relative;
+}
+.help{
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  cursor: pointer;
+}
+.sword{
+  width: 90px;
+  position: absolute;
+  top:  500px;
+  left:  20px;
+  cursor: pointer;
+}
+.chain{
+  position: absolute;
+  top: 540px;
+  left: 150px;
+  cursor: pointer;
+}
+.corrente{
+  position: absolute;
+  top: 560px;
+  left: 290px;
+  cursor: pointer;
+}
+.corvo{
+  position: absolute;
+  top: 158px;
+  left: 150px;
+  cursor: pointer;
+}
+.escudo{
+  position: absolute;
+  top: 500px;
+  left: 620px;
+  cursor: pointer;
+}
+.key{
+ position: absolute;
+  top: 500px;
+  left: 480px;
+  cursor: pointer;
+}
+.garra{
+  width: 80px;
+position: absolute;
+top: 350px;
+left: 300px;
+cursor: pointer;
+}
+.mapa{
+  width: 40px;
+position: absolute;
+top: 420px;
+left: 450px;
+cursor:pointer;
+}
+.rato{
+position: absolute;
+top: 550px;
+left: 400px;
+cursor: pointer;  
+}
+.sangue{
+position: absolute;
+top: 90px;
+left: 330px;
+cursor: pointer;
+}
+.tocha{
+position: absolute;
+top: 500px;
+left: 730px;
+cursor: pointer;
+}
+.nome{
+width: 200px;
+position: absolute;
+top: 250px;
+left: 210px;
+cursor: pointer;
+}
+.armor{
+  width: 90px;
+position: absolute;
+top: 490px;
+left: 520px;
+cursor: pointer;
+}
+.head{
+width: 50px;
+position: absolute;
+top: 220px;
+left: 480px;
+cursor: pointer; 
+}
+.spider{
+  width: 60px;
+position: absolute;
+top: 80px;
+left: 700px;
+cursor: pointer;
+}
+.livro{
+width: 80px;
+position: absolute;
+top: 380px;
+left: 10px;
+cursor: pointer;
+}
+.anim-giro{
+  animation: giro 2s;
+}
+.anim-up{
+  animation: up 2s;
+}
+.anim-shield{
+  animation:  shield 2s;
+}
+.anim-mapa{
+  animation: mapa 2s;
+}
+.anim-tocha{
+  animation: tocha 2s;
+}
+.anim-erro{
+  animation: erro 1s;
+}
+@keyframes giro {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+@keyframes up {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+@keyframes shield {
+0%{transform: scale(1);}
+50%{transform: scale(2);}
+100%{ transform: scale(1);} 
+}
+@keyframes mapa {
+ 0% {;}
+    50%{transform: rotateX(90deg);}
+    100%{}
+}
+@keyframes tocha {
+ 0% {;}
+    50%{transform: rotateX(90deg);}
+    100%{}
+}
+@keyframes erro{
+  0%{transform: rotate(0deg);}
+  100%{}
+}

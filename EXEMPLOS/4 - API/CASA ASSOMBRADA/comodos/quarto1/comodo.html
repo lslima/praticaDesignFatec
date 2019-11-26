@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+
+  <body>
+
+    <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio src="sounds/ventoBg.mp3" volume="0.1" loop autoplay>  </audio>
+
+    <div class="container">
+      <div class="comodo">
+
+            <div class="cont-comodo">
+
+              <div>
+                <img src="images/cavera.png" width="35px" height="35px" alt="" class="cavera" id="cavera" onclick="cavera()">
+                <audio src="sounds/click2(3db).mp3" id="som-cavera">  </audio>
+              </div>
+
+              <div>
+                <img src="images/mao.png" width="35px" height="45px" alt="" class="mao" id="mao" onclick="mao()">
+                <audio src="sounds/click2(3db).mp3" id="som-mao">  </audio>
+              </div>
+
+              <div>
+                <img src="images/mascara.png"  width="35px" height="35px" alt="" class="mascara" id="mascara" onclick="mascara()">
+                <audio src="sounds/click2(3db).mp3" id="som-mascara">  </audio>
+              </div>
+
+              <div>
+                <img src="images/facao1.png" width="80px" height="50px" alt="" class="facao" id="facao" onclick="facao()">
+                <audio src="sounds/click2(3db).mp3" id="som-facao">  </audio>
+              </div>
+
+              <div>
+                <img src="images/chapeu2.png" width="30px" height="45px" alt="" class="chapeu" id="chapeu" onclick="chapeu()">
+                <audio src="sounds/click2(3db).mp3" id="som-chapeu">  </audio>
+              </div>
+
+            </div>
+      </div>
+
+      <div class="moldura">
+
+      </div>
+
+      <div class="caderneta">
+          <div class="caderneta--itens">
+              <p id="txtcavera">Caveira</p>
+              <p id="txtmao">Mão</p>
+              <p id="txtmascara">Mascara</p>
+              <p id="txtfacao">Facão</p>
+              <p id="txtchapeu">Chapéu</p>
+  	      </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+
+      <script>
+          function cavera(){
+            var elemento = document.getElementById("cavera");
+            elemento.classList.toggle("ani-cavera");
+
+            var elementoTxt = document.getElementById("txtcavera");
+            elementoTxt.classList.add("txt-riscado");
+
+            document.getElementById("som-cavera").play();
+          }
+
+          function mao(){
+            var elemento = document.getElementById("mao");
+            elemento.classList.toggle("ani-mao");
+
+            var elementoTxt = document.getElementById("txtmao");
+            elementoTxt.classList.add("txt-riscado");
+
+            document.getElementById("som-mao").play();
+          }
+
+          function mascara(){
+            var elemento = document.getElementById("mascara");
+            elemento.classList.toggle("ani-mascara");
+
+            var elementoTxt = document.getElementById("txtmascara");
+            elementoTxt.classList.add("txt-riscado");
+
+            document.getElementById("som-mascara").play();
+          }
+
+          function facao(){
+            var elemento = document.getElementById("facao");
+            elemento.classList.toggle("ani-facao");
+
+            var elementoTxt = document.getElementById("txtfacao");
+            elementoTxt.classList.add("txt-riscado");
+
+            document.getElementById("som-facao").play();
+          }
+
+          function chapeu(){
+            var elemento = document.getElementById("chapeu");
+            elemento.classList.toggle("ani-chapeu");
+
+            var elementoTxt = document.getElementById("txtchapeu");
+            elementoTxt.classList.add("txt-riscado");
+
+            document.getElementById("som-chapeu").play();
+          }
+        </script>
+    </div>
+  </body>
+</html>

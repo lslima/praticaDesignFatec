@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estiloComodo.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <div class="comodo">
+      <!-- Aqui vai o código para o cômodo -->
+      <div class="cont-comodo">
+        <img src="img/fundo.png" class="fundo">
+        <div>
+          <img src="img/faca.png" class="faca"id="faca" onclick="faca()">
+          <audio src="sounds/Joker.mp3" id="s-faca">
+          </audio>
+        </div>
+        <div class="">
+          <img src="img/rato.png" class="rato" id="rato" onclick="rato()">
+          <audio src="sounds/jigsaw.mp3" id="s-rato">
+          </audio>
+        </div>
+        <div class="">
+          <img src="img/mangual.png"class="mangual"id="mangual" onclick="mangual()">
+          <audio src="sounds/Doom.mp3" id="s-mangual">
+          </audio>
+        </div>
+        <div class="">
+          <img src="img/machado.png"class="machado"id="machado" onclick="machado()">
+          <audio src="sounds/Cleric.mp3" id="s-machado">
+          </audio>
+        </div>
+        <div class="">
+          <img src="img/saw.png"class="saw" id="saw" onclick="saw()">
+          <audio src="sounds/Cleric.mp3" id="s-saw">
+          </audio>
+        </div>
+        <div class="">
+          <img src="img/crossbow.png"class="crossbow"id="crossbow" onclick="crossbow()">
+          <audio src="sounds/Lion.mp3" id="s-crossbow">
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div class="moldura">
+
+    </div>
+    <div class="caderneta">
+      <div class="caderneta--itens">
+        <p id="txtrato">rato</p>
+      	<p id="txtfaca">faca</p>
+      	<p id="txtCrossBow">Crossbow</p>
+      	<p id="txtmangual">mangual</p>
+      	<p id="txtsaw">saw</p>
+      	<p id="txtmachado">machado</p>
+      </div>
+    </div>
+    <div class="moeda">
+      <a href="../../index.html">
+        <img src="../../images/moeda.png" alt="">
+      </a>
+    </div>
+    <div class="vinheta">
+
+    </div>
+    <!-- <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> -->
+    <!-- <audio src="sounds/ventoBg.mp3" loop autoplay> -->
+    </audio>
+    <script>
+
+
+    function saw(){
+      var elemento = document.getElementById("saw");
+      elemento.classList.toggle("anim-saw");
+
+      var elementoTxt = document.getElementById("txtsaw");
+      elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-saw").play();
+    }
+    function faca(){
+      var elemento = document.getElementById("faca");
+      elemento.classList.toggle("anim-faca");
+
+      var elementoTxt = document.getElementById("txtfaca");
+      elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-faca").play();
+    }
+    function mangual(){
+      var elemento = document.getElementById("mangual");
+      elemento.classList.toggle("anim-mangual");
+
+      var elementoTxt = document.getElementById("txtmangual");
+      elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-mangual").play();
+    }
+    function machado(){
+      var elemento = document.getElementById("machado");
+      elemento.classList.toggle("anim-machado");
+
+      var elementoTxt = document.getElementById("txtmachado");
+      elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-machado").play();
+    }
+    function crossbow(){
+      var elemento = document.getElementById("crossbow");
+      elemento.classList.toggle("anim-crossbow");
+
+      var elementoTxt = document.getElementById("txtCrossBow");
+      elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-crossbow").play();
+    }
+    function rato(){
+      var elemento = document.getElementById("rato");
+      elemento.classList.toggle("anim-rato");
+
+      var elementoTxt = document.getElementById("txtrato");
+      elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-rato").play();
+    }
+
+    </script>
+  </div>
+</body>
+</html>

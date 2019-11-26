@@ -1,0 +1,185 @@
+.cont_comado{
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    }
+.tesouro{
+    left: 80px;
+    top: 365px;
+    position: absolute;
+    cursor: pointer;
+     }
+.abajur{
+      left: 270px;
+      top: 455px;
+      position: absolute;
+      cursor: pointer;
+   }
+.abajur_aceso{
+    left: 385px;
+    top: 270px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+.borboleta{
+      left: 07px;
+      top: 30px;
+      position: absolute;
+      cursor: pointer;
+    }
+.fantasma{
+      left: 660px;
+      top: 387px;
+      position: absolute;
+      cursor: pointer;
+   }
+.luz{
+    left: 410px;
+    top: 12px;
+    position: absolute;
+    cursor: pointer;
+    }
+.luz_acesa{
+    left: 330px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+    }
+.retrato{
+    left: 120px;
+    top: 90px;
+    position: absolute;
+    cursor: pointer;
+  }
+.rato{
+  top: 480px;
+  left: 380px;
+  position: absolute;
+}
+.quadro{
+  top: 130px;
+  left: 330px;
+  position: absolute;
+}
+
+.anim-abajur{
+     animation: abajur  3s;
+
+     }
+.anim-borboleta{
+   animation: borboleta 3s;
+}
+.anim-lareira{
+   animation: lareira 3s;
+
+}
+.anim-fantasma{
+   animation: fantasma 3s;
+
+}
+.anim-luz{
+  animation: luz 3s;
+
+}
+.anim-retrato{
+  animation: retrato 3s;
+         }
+.anim-tesouro{
+  animation: tesouro 3s;
+
+}
+
+}
+@keyframes abajur{
+  0%{
+  left: 0px;
+  }
+  49%{
+  left: 50px;
+  transform: scaleX(1);
+  }
+  50%{
+  left: 70px;
+  transform: scaleX(-1);
+  }
+  100%{
+  left: 100px;
+  }
+}
+@keyframes borboleta{
+  0%{
+  left: 0px;
+  }
+  49%{
+  left: 50px;
+  transform: scaleX(1);
+  }
+  50%{
+  left: 70px;
+  transform: scaleX(-1);
+  }
+  100%{
+  left: 100px;
+  }
+
+
+}
+@keyframes fantasma{
+  0%{
+  left: 0px;
+  }
+  49%{
+  left: 50px;
+  transform: scaleX(1);
+  }
+  50%{
+  left: 70px;
+  transform: scaleX(-1);
+  }
+  100%{
+  left: 100px;
+  }
+}
+@keyframes retrato{
+  0%{
+  left: 0px;
+  }
+  50%{
+  left: 70px;
+  transform: scaleX(-1);
+  }
+  100%{
+  left: 100px;
+  }
+}
+@keyframes tesouros{
+  0%{
+  left: 0px;
+  }
+  49%{
+  left: 50px;
+  transform: scaleX(1);
+  }
+  50%{
+  left: 70px;
+  transform: scaleX(-1);
+  }
+  100%{
+  left: 100px;
+  }
+
+}
+@keyframes luz{
+  0%{
+  left: 0px;
+  }
+  50%{
+  left: 70px;
+  transform: scaleX(-1);
+  }
+  100%{
+  left: 100px;
+  }
+}

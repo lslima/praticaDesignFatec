@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../style/estilo.css">
+</head>
+<body>
+	<section class="principal">
+		<img src="../imagens/moldura.png" class="moldura">
+		<img src="../imagens/cenario.png" class="cenario">
+		<img src="../imagens/cabeca.png" class="cabeca" onclick="cabeca()" id="cabeca">
+		 <audio src="../sound/audio4.mp3" id="s-cabeca" >
+                  Seu navegador não suporta elementos de audio
+         </audio>
+		<img src="../imagens/porta.png" class="porta" onclick="porta()" id="porta">
+		 <audio src="../sound/audio.mp3" id="s-porta">
+                  Seu navegador não suporta elementos de audio
+         </audio>
+		<img src="../imagens/escada.png" class="escada">
+		<img src="../imagens/dr_caligari_sombra.png" class="sombra" onclick="sombra()" id="sombra">
+		<audio src="../sound/audio6.mp3" id="s-sombra">
+                  Seu navegador não suporta elementos de audio
+         </audio>
+
+		<img src="../imagens/dr_caligari_caixao.png" class="caixao" onclick="caixao()" id="caixao">
+		 <audio src="../sound/audio2.mp3" id="s-caixao">
+                  Seu navegador não suporta elementos de audio
+         </audio>
+		<img src="../imagens/mulher.png" class="mulher"  onclick="mulher()" id="mulher">
+		 <audio src="../sound/audio5.mp3" id="s-mulher" >
+                  Seu navegador não suporta elementos de audio
+         </audio>
+
+         <img src="../imagens/pergaminho.png" class="pergaminho">
+
+
+
+         <div class="palavras">
+         	<p id="txtsombra">Dr. Caligari</p>
+         	<p id="txtcabeca">Cesare</p>
+         	<p id="txtmulher">Jane Olsen</p>
+         	<p id="txtportal">Portal</p>
+         	<p id="txtcaixao">Hipnose</p>
+         </div>
+
+	</section>
+
+<script>
+	function porta(){
+          var elemento = document.getElementById("porta");
+          elemento.classList.toggle("anim-lareira");
+
+
+          var elementoTxt = document.getElementById("txtportal");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-porta").play();
+        }
+
+
+        function caixao(){
+          var elemento = document.getElementById("caixao");
+          elemento.classList.toggle("anim-caixao");
+
+
+          var elementoTxt = document.getElementById("txtcaixao");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-caixao").play();
+        }
+
+
+
+        function cabeca(){
+          var elemento = document.getElementById("cabeca");
+          elemento.classList.toggle("anim-cabeca");
+
+
+          var elementoTxt = document.getElementById("txtcabeca");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-cabeca").play();
+        }
+
+
+
+        function mulher(){
+          var elemento = document.getElementById("mulher");
+          elemento.classList.toggle("anim-mulher");
+
+
+
+          var elementoTxt = document.getElementById("txtmulher");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-mulher").play();
+        }
+
+
+        function sombra(){
+          var elemento = document.getElementById("sombra");
+          elemento.classList.toggle("anim-sombra");
+
+
+          var elementoTxt = document.getElementById("txtsombra");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-sombra").play();
+        }
+ </script>
+        
+</body>
+</html>

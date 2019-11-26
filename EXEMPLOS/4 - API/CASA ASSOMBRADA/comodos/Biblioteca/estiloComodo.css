@@ -1,0 +1,111 @@
+body{
+  margin: 0;
+  cursor: url(images/Cursor1.png), auto;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/background.png);
+  position: relative;
+}
+.monalisa{
+  position: absolute;
+  top: 133px;
+  left: 370px;
+}
+.monacthulhu{
+  position: absolute;
+  top: 133px;
+  left: 370px;
+  opacity: 0;
+}
+.vasot1{
+  position: absolute;
+  left: 260px;
+  bottom: 200px;
+}
+.simbolo{
+  position: absolute;
+  bottom: 106px;
+  left: 384px;
+}
+.mascara{
+  position: absolute;
+  bottom: 115px;
+  left: 190px;
+}
+.mascara1{
+  position: relative;
+  bottom: 115px;
+  left: 190px;
+  opacity: 0;
+}
+.estatua{
+  position: absolute;
+  top: 327px;
+  left: 115px;
+}
+.pergaminho{
+  position: absolute;
+  bottom: 100px;
+  right: 245px;
+}
+.pergaminho1{
+  position: absolute;
+  top: 150px;
+  left: -250px;
+  opacity: 0;
+}
+.asas{
+  position: absolute;
+  top: 35px;
+  right: 325px;
+}
+.quadroE{
+  position: absolute;
+  top: 390px;
+  right: 120px;
+}
+.bookE{
+  position: absolute;
+  top: 390px;
+  right: 245px;
+}
+
+
+.anim-quadro{
+  animation: quadro 2s;
+}
+.anim-quadro1{
+  animation: quadro1 2s forwards;
+}
+.anim-simbolo{
+  animation: simbolo 2s;
+}
+.anim-mascara{
+  animation: mascara 1s;
+}
+.anim-mensagem{
+  animation: mensagem 3s;
+}
+
+@keyframes quadro1 {
+  0%{opacity: 0;}
+  100%{ opacity: 1;}
+}
+@keyframes simbolo {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+@keyframes mensagem{
+ 0%{opacity: 0; left: -250px;}
+ 1%{left: 280px;}
+ 50%{opacity: 1; left: 280px;}
+ 100%{opacity: 1; left: 280px;}
+}
+@keyframes mascara {
+  0%{opacity: 0; position: absolute;}
+  50%{opacity: 1; transform: scale(6); left: 350px; bottom: 250px;}
+  100%{opacity: 0;position: absolute;bottom: 115px; left: 190px; transform: scale(1);}
+}

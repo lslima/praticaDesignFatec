@@ -1,0 +1,106 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/igreja.png);
+  position: relative;
+}
+.aliança{
+  position: absolute;
+  top: 180px; /*y*/
+  left: 500px; /*x*/
+  cursor: pointer;
+}
+.noivo{
+  position: absolute;
+  top: 335px; /*y*/
+  left: 460px; /*x*/
+  cursor: pointer;
+}
+.terço{
+  position: absolute;
+  top: 45px; /*y*/
+  left: 710px; /*x*/
+  cursor: pointer;
+}
+.bouquet{
+  position: absolute;
+  top: 45px; /*y*/
+  left: 110px; /*x*/
+  cursor: pointer;
+}
+.coroa{
+  position: absolute;
+  right: 230px;
+  bottom: -20px;
+  cursor: pointer;
+
+}
+.noiva{
+  position: absolute;
+  right: 2px;
+  bottom: 0px;
+  cursor: pointer;
+}
+.sapato{
+  position: absolute;
+  top: 562px;
+  left:-8px;
+  cursor: pointer;
+}
+.anim-aliança{
+  animation: aliança 2s;
+}
+.anim-noivo{
+  animation: noivo 2s;
+}
+.anim-terço{
+  animation: terço 2s;
+}
+.anim-bouquet{
+  animation: bouquet 2s;
+}
+.anim-coroa{
+  animation: coroa 2s;
+}
+.anim-noiva{
+  animation: noiva 4s;
+}
+.anim-sapato{
+  animation: sapato 4s;
+}
+@keyframes aliança {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes noivo {
+   0%{transform: scale(1);}
+  50%{transform: scale(0.5);}
+
+}
+@keyframes terço {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+@keyframes bouquet {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+@keyframes coroa{
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+}
+
+@keyframes noiva {
+  0%{transform: scale(1);}
+  20%{transform: scale(2);}
+  50%{ transform: scale(1);}
+}
+@keyframes sapato {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}

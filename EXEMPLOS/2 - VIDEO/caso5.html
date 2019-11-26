@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-bt" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Caso 5</title>
+  <style>
+    *{
+      font-family: sans-serif;
+      margin:0;
+    }
+
+    .videoCont{
+      height: 100vh;
+      overflow: hidden;
+    }
+    .videoBG{
+      width: 100%;
+      transform: translateY(-50%;);
+    }
+    h1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.65);
+      padding: 30px;
+      color: white;
+      border: 2px solid white;
+    }
+    .resto{
+      background-color: white;
+      width: 960px;
+      padding: 80px;
+      margin: auto;
+    }
+    .resto p{
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="videoCont">
+      <video poster="videos/videoAbstrato.png" autoplay muted loop class="videoBG">
+        <source src="videos/videoAbstrato.mp4" type="video/mp4">
+        <source src="videos/videoAbstrato.ogv" type="video/ogg">
+      </video>
+      <h1>Oi, tem um vídeo tocando!</h1>
+    </div>
+    <div class="resto">
+      <h2>Aqui vai o resto da página</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+</body>
+</html>

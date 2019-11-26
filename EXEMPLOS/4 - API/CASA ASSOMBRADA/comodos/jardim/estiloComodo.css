@@ -1,0 +1,337 @@
+body{
+  margin: 0;
+  cursor: url("images/clique.png");
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url("images/fundo.jpg");
+  position: relative;
+}
+
+.arvore{
+  position: absolute;
+  top: 145px;
+  left: 0px;
+  cursor:help;
+  }
+
+.galhos {
+  position: absolute;
+  top: 65px;
+  left: 110px;
+  cursor: help;
+
+}
+.galhosdois {
+  position: absolute;
+  top: 115px;
+  left: 10px;
+
+}
+
+.cobra {
+   position: absolute;
+  top: 120px;
+  left: 188px;
+  cursor: pointer;
+
+}
+
+.cobra img{
+  width:55px;
+  height:35px;
+}
+
+.aranha {
+  position: absolute;
+  top: 460px;
+  left: 449px;
+  cursor: pointer;
+  animation: aranha 10s infinite;
+}
+
+.aranha img {
+  width:40px;
+  height:20px;
+}
+
+
+
+
+.arbustro {
+  position: absolute;
+  left: 65px;
+  top: 421px;
+
+}
+
+.saci{
+  position: absolute;
+  left: 28px;
+  top: 330px;
+  cursor: pointer;
+}
+
+
+
+
+
+.folhas{
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
+
+.folhasdois{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.caveiratrono{
+  position: absolute;
+  left: 179px;
+  top: 235px;
+  cursor: url(images/clique.png), auto;
+
+}
+
+.cruz{
+  position: absolute;
+  left: 356px;
+  top: 50px;
+  cursor: pointer;
+}
+
+.pedra {
+  position: absolute;
+  left: 407px;
+  top: 446px;
+
+}
+
+.sapo {
+  position: absolute;
+  left: 482px;
+  top: 229px;
+  cursor: pointer;
+}
+
+.sapo:hover
+{
+        -webkit-transform: translateY(-150px);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+
+
+.coruja {
+  position: absolute;
+  left: 197px;
+  top: 226px;
+  cursor: pointer;
+}
+
+.mula {
+  position: absolute;
+  left: 500px;
+  top: 267px;
+  cursor: pointer;
+}
+
+
+.mula:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+
+
+.bigorna {
+  position: absolute;
+  left: 25px;
+  top: 402px;
+
+}
+
+.ferradura{
+  position: absolute;
+  left: 102px;
+  top: 429px;
+  cursor: pointer;
+}
+
+.martelo {
+  position: absolute;
+  left: 130px;
+  top: 400px;
+  cursor: pointer;
+
+}
+
+
+.moeda2{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.anim-moeda{
+  animation: moeda 2s;
+}
+
+.anim-mula{
+  animation: mula 2s;
+}
+
+.anim-cruz {
+  animation: cruz 2s;
+}
+
+.anim-coruja {
+    animation: coruja 2s;
+}
+
+.anim-saci {
+    animation: saci 10s;
+}
+
+.anim-sapo {
+    animation: sapo 2s;
+}
+
+.anim-martelo {
+    animation: martelo 10s;
+}
+
+.anim-cobra{
+    animation: cobra 7s;
+}
+
+.anim-ferradura{
+    animation: ferradura 7s;
+}
+
+.anim-caveiratrono{
+    animation: caveiratrono 7s;
+}
+
+
+
+@keyframes saci {
+      0%{
+   		transform: translateY(0);
+   	}
+   	50%{
+   		transform: translateY(-150px);
+   	}
+    	100%{
+   		transform: translateY(0);
+   	}
+}
+
+
+
+@keyframes caveiratrono {
+      0%{
+   		transform: translate(0);
+   	}
+   	50%{
+   		transform: translate(1);
+   	}
+    	100%{
+   		transform: translate(1);
+   	}
+}
+
+
+@keyframes cobra {
+      0%{
+   		transform: translateY(0);
+   	}
+   	50%{
+   		transform: translateX(72px);
+   	}
+    	100%{
+   		transform: translateY(0);
+   	}
+}
+
+
+
+
+@keyframes moeda {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+
+@keyframes mula {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+
+@keyframes ferradura {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+
+
+
+@keyframes martelo {
+  0%{transform: rotate(360deg);}
+  20%{ transform: rotate(0deg);}
+  40%{ transform: rotate(360deg);}
+  60%{ transform: rotate(0deg);}
+  80%{ transform: rotate(360deg);}
+  100%{ transform: rotate(0deg);}
+}
+
+@keyframes cruz {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+
+@keyframes coruja {
+  0%{transform:scale(1.7);}
+  100%{ -o-transform:scale(1.7);}
+}
+
+@keyframes sapo {
+  0%{transform:scale(1.7);}
+    100%{ -o-transform:scale(1.7);}
+}
+
+
+@keyframes aranha {
+  0%{
+    top: 450px;
+    left: 449px;
+
+}
+
+  50%{
+    top: 450px;
+    left: 160px;
+
+  }
+
+    75%{
+      top: 570px;
+      left: 149px;
+      transform: rotateY(180deg);
+
+    }
+
+  100%{
+    top: 590px;
+    left: 449px;
+    transform: rotateY(180deg);
+  }
+}

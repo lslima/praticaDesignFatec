@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+              <div>
+                <img src="images/monalisa.png" alt="" class="monalisa" id="quadro" onclick="quadro()">
+                <audio src="sounds/cthulhu-growl.wav" id="s-quadro">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/monacthulhu.png" alt="" class="monacthulhu" id="quadro1" onclick="quadro1()" >
+              </div>
+              <div>
+                <img src="images/vaso.png" alt="" class="vasot1" id="moeda" onclick="vaso()">
+                <audio src="sounds/error.wav" id="s-vaso">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/simbolo.png" alt="" class="simbolo" id="simbolo" onclick="simbolo()">
+                <audio src="sounds/success.wav" id="s-simbolo">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/marcaraT.png" alt="" class="mascara" id="mascara" onclick="mascara()">
+                <audio src="sounds/cthulhu-roar.wav" id="s-mascara">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/mascara.png" alt="" class="mascara1" id="mascara1">
+                <audio src="sounds/cthulhu-roar.wav" id="s-mascara">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/estatuaT.png" alt="" class="estatua" id="estatua" onclick="estatua()">
+                <audio src="sounds/success.wav" id="s-estatua">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/pergaminhoT.png" alt="" class="pergaminho" id="mensagem" onclick="mensagem()">
+                <audio src="sounds/paper.wav" id="s-mensagem">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/pergaminho.png" alt="" class="pergaminho1" id="mensagem1">
+                <audio src="sounds/paper.wav" id="s-mensagem">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/asasT.png" alt="" class="asas" id="asas" onclick="asas()">
+                <audio src="sounds/error.wav" id="s-asas">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/quadroE.png" alt="" class="quadroE" id="quadroE" onclick="quadroE()">
+                <audio src="sounds/error.wav" id="s-quadroE">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/bookE.png" alt="" class="bookE" id="bookE" onclick="bookE()">
+                <audio src="sounds/error.wav" id="s-bookE">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/asasT.png" alt="" class="asas" id="asas" onclick="asas()">
+                <audio src="sounds/error.wav" id="s-asas">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtEstatua">Estatua</p>
+          <p id="txtSimbolo">Simbolo</p>
+          <p id="txtMascara">Mascara</p>
+          <p id="txtMensagem">Mensagem</p>
+          <p id="txtQuadro">Imagem</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" loop autoplay>
+      </audio>
+      <script>
+        function quadro1(){
+          var elemento = document.getElementById("quadro1");
+          elemento.classList.toggle("anim-quadro1");
+
+          var elementoTxt = document.getElementById("txtQuadro");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-quadro").play();
+        }
+        function simbolo(){
+          var elemento = document.getElementById("simbolo");
+          elemento.classList.toggle("anim-simbolo");
+
+          var elementoTxt = document.getElementById("txtSimbolo");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-simbolo").play();
+        }
+        function estatua(){
+          var elemento = document.getElementById("estatua");
+          elemento.classList.toggle("anim-simbolo");
+
+          var elementoTxt = document.getElementById("txtEstatua");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-estatua").play();
+        }
+        function mascara(){
+          var elemento = document.getElementById("mascara1");
+          elemento.classList.toggle("anim-mascara");
+
+          var elementoTxt = document.getElementById("txtMascara");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-mascara").play();
+        }
+        function mensagem(){
+          var elemento = document.getElementById("mensagem1");
+          elemento.classList.toggle("anim-mensagem");
+
+          var elementoTxt = document.getElementById("txtMensagem");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-mensagem").play();
+        }
+        function vaso(){
+          document.getElementById("s-vaso").play();
+        }
+        function asas(){
+          document.getElementById("s-asas").play();
+        }
+        function quadroE(){
+          document.getElementById("s-quadroE").play();
+        }
+        function bookE(){
+          document.getElementById("s-bookE").play();
+        }
+      </script>
+  </div>
+  </body>
+</html>

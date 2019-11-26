@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+        <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio src="sounds/ventoBg.mp3" loop autoplay>
+        </audio>
+
+            <div class="cont-comodo">
+              <div>
+                <img src="images/chifre.png" alt="" class="chifre" id="chifre" onclick="chifre()">
+                <audio src="sounds/boigritando.mp3" id="s-chifre">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+
+                <img src="images/freira.png" alt="" class="freira" id="freira" onclick="freira()">
+                <audio src="sounds/freira.mp3" id="s-freira">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/cadeiradochucky.png" alt="" class="cadeiradochucky">
+              </div>
+              <div>
+                <img src="images/chucky.png" alt="" class="chucky" id="chucky" onclick="chucky()">
+                <audio src="sounds/chucky.wav" id="s-chucky">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/quadro.png" alt="" class="quadro" id="quadro" onclick="quadro()">
+                <audio src="sounds/quadro.wav" id="s-quadro">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/papel.png" alt="" class="bilhete" id="bilhete" onclick="bilhete()">
+                <audio src="sounds/bilhete.wav" id="s-bilhete">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/annabelle.png" alt="" class="annabelle">
+                <audio src="sounds/bilhete.wav" >
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/manchadesangue.png" alt="" class="mancha" id="mancha" onclick="mancha()">
+                <audio src="sounds/annabelle.wav" id="s-mancha">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+
+              <div>
+                <img src="images/caixabaguncada.png" alt="" class="caixabaguncada">
+              </div>
+              <div>
+                <img src="images/mesabanquete.png" alt="" class="mesabanquete" id="banquete" onclick="banquete()" >
+              </div>
+              <div>
+                <img src="images/caixotes.png" alt="" class="caixotes">
+              </div>
+
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtChifre">Chifre</p>
+          <p id="txtBanquete">Banquete</p>
+          <p id="txtQuadro">Quadro</p>
+          <p id="txtBilhete">Bilhete</p>
+          <p id="txtMancha">Mancha de Sangue</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+
+
+      <script>
+        function chifre(){
+          var elemento = document.getElementById("chifre");
+          elemento.classList.toggle("anim-chifre");
+
+          var elementoTxt = document.getElementById("txtChifre");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-chifre").play();
+        }
+
+        function banquete(){
+          var elemento = document.getElementById("banquete");
+          elemento.classList.toggle("anim-banquete");
+
+          var elementoTxt = document.getElementById("txtBanquete");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-banquete").play();
+        }
+
+        function quadro(){
+          var elemento = document.getElementById("quadro");
+          elemento.classList.toggle("anim-quadro");
+
+          var elementoTxt = document.getElementById("txtQuadro");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-quadro").play();
+        }
+
+        function bilhete(){
+          var elemento = document.getElementById("bilhete");
+          elemento.classList.toggle("anim-bilhete");
+
+          var elementoTxt = document.getElementById("txtBilhete");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-bilhete").play();
+          }
+
+        function mancha(){
+          var elemento = document.getElementById("mancha");
+          elemento.classList.toggle("anim-mancha");
+
+          var elementoTxt = document.getElementById("txtMancha");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-mancha").play();
+          }
+
+        function chucky(){
+            document.getElementById("s-chucky").play();
+          }
+
+        function freira(){
+            document.getElementById("s-freira").play();
+          }
+      </script>
+  </div>
+  </body>
+</html>

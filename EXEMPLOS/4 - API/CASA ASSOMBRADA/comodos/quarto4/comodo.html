@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+              <div class="fundo"><img src="images/fundo.png" alt=""> </div>
+              <div class="abajur">
+                <img src="images/abajur.png" alt="" id="abajur" onclick="abajur()">
+              </div>
+
+              <audio src="sounds/riso.mp3" id="s-abajur"></audio>
+              <!-- <div class="abajur_aceso"><img src="images/abajur_aceso.png" alt=""> </div> -->
+              <div class="borboleta">
+                <img src="images/borboleta.png" alt="" id="borboleta" onclick="borboleta()">
+                <audio src="sounds/borboleta.mp3" id="s-borboleta"></audio>
+              </div>
+              <div class="fantasma">
+                <img src="images/fantasma.png" alt="" id="fantasma" onclick="fantasma()">
+                <audio src="sounds/fantasma.mp3" id="s-fantasma"></audio>
+              </div>
+              <div class="luz">
+              <img src="images/luz.png" alt="" id="luz" onclick="luz()">
+              <audio src="sounds/apito.mp3" id="s-luz"></audio>
+              </div>
+              <!--<div class="luz_acesa"><img src="images/luz_acesa.png" alt=""> </div> -->
+              <div class="retrato">
+              <img src="images/retrato.png" alt="" id="retrato" onclick="retrato()">
+              <audio src="sounds/quadro.mp3" id="s-retrato"></audio>
+              </div>
+              <div class="tesouro">
+              <img src="images/tesouro.png" alt="" id="tesouro" onclick="tesouro()">
+              <audio src="sounds/ventoBg.mp3" id="s-tesouro"></audio>
+              </div>
+              <div class="rato">  <img src="images/rato.png" alt=""> </div>
+              <div class="quadro">  <img src="images/quadro.png" alt=""> </div>
+
+            </div>
+           </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtabajur">abajur</p>
+          <p id="txtretrato">retrato</p>
+          <p id="txtborboleta">borboleta</p>
+          <p id="txtfantasma">fantasma</p>
+          <p id="txttesouro">tesouro</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+         <audio src="sounds/ventoBg.mp3" loop autoplay>
+        </audio>
+      <script>
+        function lareira(){
+          var elemento = document.getElementById("lareira");
+          elemento.classList.toggle("anim-lareira");
+
+          var elementoTxt = document.getElementById("txtLareira");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-lareira").play();
+        }
+        function moeda(){
+          var elemento = document.getElementById("moeda");
+          elemento.classList.toggle("anim-moeda");
+
+          var elementoTxt = document.getElementById("txtMoeda");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-moeda").play();
+        }
+
+        function abajur(){
+          var abajur = document.getElementById("abajur");
+          abajur.classList.toggle("anim-abajur");
+
+          var elementoTxt = document.getElementById("txtabajur");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-abajur").play();
+        }
+
+        function retrato(){
+          var retrato = document.getElementById("retrato");
+          retrato.classList.toggle("anim-retrato");
+
+          var elementoTxt = document.getElementById("txtretrato");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-retrato").play();
+        }
+
+        function borboleta(){
+          var borboleta2 = document.getElementById("borboleta");
+          borboleta2.classList.toggle("anim-borboleta");
+
+          var elementoTxt = document.getElementById("txtborboleta");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-borboleta").play();
+        }
+
+        function fantasma(){
+          var fantasma = document.getElementById("fantasma");
+          fantasma.classList.toggle("anim-fantasma");
+
+          var elementoTxt = document.getElementById("txtfantasma");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-fantasma").play();
+        }
+
+        function tesouro(){
+          var tesouro = document.getElementById("tesouro");
+          tesouro.classList.toggle("anim-tesouro");
+
+          var elementoTxt = document.getElementById("txttesouro");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-tesouro").play();
+        }
+
+      </script>
+  </div>
+  </body>
+
+</html>

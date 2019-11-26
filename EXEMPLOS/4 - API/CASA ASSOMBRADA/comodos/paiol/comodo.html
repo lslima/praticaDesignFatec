@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estiloComodo.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="comodo">
+
+
+      <div class="celeiro">
+        <img src="images/celeiro.png">
+      </div>
+
+      <div class="lobo">
+        <img src="images/lobo.png">
+      </div>
+
+      <div class="tronco">
+        <img src="images/tronco.png">
+      </div>
+
+
+
+      <div class="banco">
+        <img src="images/banco.png">
+      </div>
+
+
+      <div class="saci">
+        <img src="images/saci.png">
+      </div>
+
+
+      <div class="cont-comodo">
+
+        <div class ="lagarto" id="lagarto">
+
+          <img src="images/lagarto.png" alt="" class="lagarto" id="lagarto" onclick="lagarto()">
+          <audio src="sounds/apito.mp3" id="s-lagarto">
+            Seu navegador não suporta elementos de audio
+          </audio>
+        </div>
+
+        <div class ="ferradura" id="ferradura">
+          <img src="images/ferradura.png" alt="" class="ferradura" id="ferradura" onclick="ferradura()">
+          <audio src="sounds/apito.mp3" id="s-ferradura">
+            Seu navegador não suporta elementos de audio
+          </audio>
+        </div>
+
+
+
+
+
+        <div class ="cachimbo" id="cachimbo">
+          <img src="images/cachimbo.png" alt="" class="cachimbo" id="cachimbo" onclick="cachimbo()">
+          <audio src="sounds/apito.mp3" id="s-cachimbo">
+            Seu navegador não suporta elementos de audio
+          </audio>
+        </div>
+
+
+
+        <div class ="lobisomem" id="lobisomem">
+          <img src="images/lobisomem.png" alt="" class="lobisomem" id="lobisomem" onclick="lobisomem()">
+          <audio src="sounds/apito.mp3" id="s-lobisomem">
+            Seu navegador não suporta elementos de audio
+          </audio>
+        </div>
+
+        <div class ="portao" id="portao">
+          <img src="images/portao.png" alt="" class="portao" id="portao" onclick="lobisomen()">
+          <audio src="sounds/apito.mp3" id="s-portao">
+            Seu navegador não suporta elementos de audio
+          </audio>
+        </div>
+        <div class="feno1">
+          <img src="images/feno1.png">
+        </div>
+
+        <div class="feno2">
+          <img src="images/feno2.png">
+        </div>
+
+        <div class="feno">
+          <img src="images/feno.png">
+        </div>
+
+        <div class="linha">
+          <img src="images/linha.png">
+        </div>
+        <div class ="agulha" id="agulha">
+          <img src="images/agulha.png" alt="" class="agulha" id="agulha" onclick="agulha()">
+          <audio src="sounds/apito.mp3" id="s-agulha">
+            Seu navegador não suporta elementos de audio
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div class="moldura">
+
+    </div>
+    <div class="caderneta">
+      <div class="caderneta--itens">
+        <p id="txtlagarto">Lagarto</p>
+        <p id="txtferradura">Ferradura</p>
+        <p id="txtagulha">Agulha</p>
+        <p id="txtcachimbo">Chachimbo Saci</p>
+        <p id="txtlobisomen">Lobisomen</p>
+
+      </div>
+    </div>
+    <div class="moeda">
+      <img src="../../images/moeda.png" alt="">
+    </div>
+    <div class="vinheta">
+    </div>
+
+
+    <script type="text/javascript">
+
+    function lagarto(){
+      var elemento1 = document.getElementById("lagarto");
+      elemento1.classList.toggle("anim-lagarto");
+
+      var elemento1Txt = document.getElementById("txtlagarto");
+      elemento1Txt.classList.add("txt-riscado");
+
+      document.getElementById("s-lagarto").play();
+    }
+
+    function ferradura(){
+      var elemento2 = document.getElementById("ferradura");
+      elemento2.classList.toggle("anim-ferradura");
+
+      var elemento2Txt = document.getElementById("txtferradura");
+      elemento2Txt.classList.add("txt-riscado");
+
+      document.getElementById("s-ferradura").play();
+    }
+
+    function agulha(){
+      var elemento3 = document.getElementById("agulha");
+      elemento3.classList.toggle("anim-agulha");
+
+      var elemento3Txt = document.getElementById("txtagulha");
+      elemento3Txt.classList.add("txt-riscado");
+
+      document.getElementById("s-agulha").play();
+    }
+
+    function cachimbo(){
+      var elemento4 = document.getElementById("cachimbo");
+      elemento4.classList.toggle("anim-cachimbo");
+
+      var elemento4Txt = document.getElementById("txtcachimbo");
+      elemento4Txt.classList.add("txt-riscado");
+
+      document.getElementById("s-cachimbo").play();
+    }
+
+    function lobisomen(){
+      var elemento5 = document.getElementById("lobisomen");
+      elemento5.classList.toggle("anim-lobisomen");
+
+      var elemento5Txt = document.getElementById("txtlobisomen");
+      elemento5Txt.classList.add("txt-riscado");
+
+      document.getElementById("s-lobisomen").play();
+    }
+
+
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+              <div>
+                <img src="images/vela.png" alt="" class="vela" id="lareira" onclick="lareira()">
+                <audio src="sounds/fogo.wav" id="s-lareira">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/faca.png" alt="" class="faca" id="moeda" onclick="moeda()">
+                <audio src="sounds/faca.wav" id="s-moeda">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/mensagem.png" alt="" class="mensagem" id="papel">
+                <audio src="sounds/papelsuspense.wav" id="s-papel">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/papelsangue.png" alt="" class="papel" id="papel" onclick="papel()">
+                <audio src="sounds/papelsuspense.wav" id="s-papel">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <div>
+                  <img src="images/foto.png" alt="" class="foto" id="taxinha">
+                  <audio src="sounds/fotomusic.wav" id="s-taxinha">
+                    Seu navegador não suporta elementos de audio
+                  </audio>
+                </div>
+                <img src="images/taxinha.png" alt="" class="taxinha" id="taxinha" onclick="taxinha()">
+                <audio src="sounds/fotomusic.wav" id="s-taxinha">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/texto1.png" alt="" class="texto" id="rato" >
+                <audio src="sounds/rato.mp3" id="s-rato">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/rato.png" alt="" class="rato" id="rato" onclick="rato()">
+                <audio src="sounds/rato.mp3" id="s-rato">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtLareira">Vela</p>
+          <p id="txtMoeda">Faca</p>
+          <p id="txtPapel">Papel com Sangue</p>
+          <p id="txtRato">Rato</p>
+          <p id="txtTaxinha">Taxinha</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" loop="" autoplay="">
+      </audio>
+      <script>
+        function lareira(){
+          var elemento = document.getElementById("lareira");
+          elemento.classList.toggle("anim-lareira");
+
+          var elementoTxt = document.getElementById("txtLareira");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-lareira").play();
+        }
+        function moeda(){
+          var elemento = document.getElementById("moeda");
+          elemento.classList.toggle("anim-moeda");
+
+          var elementoTxt = document.getElementById("txtMoeda");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-moeda").play();
+        }
+
+        function taxinha(){
+          var elemento = document.getElementById("taxinha");
+          elemento.classList.toggle("anim-taxinha");
+
+
+          var elementoTxt = document.getElementById("txtTaxinha");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-taxinha").play();
+        }
+
+        function papel(){
+          var elemento = document.getElementById("papel");
+          elemento.classList.toggle("anim-papel");
+
+
+          var elementoTxt = document.getElementById("txtPapel");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-papel").play();
+        }
+
+        function rato(){
+          var elemento = document.getElementById("rato");
+          elemento.classList.toggle("anim-rato");
+
+
+          var elementoTxt = document.getElementById("txtRato");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-rato").play();
+        }
+      </script>
+  </div>
+  </body>
+</html>

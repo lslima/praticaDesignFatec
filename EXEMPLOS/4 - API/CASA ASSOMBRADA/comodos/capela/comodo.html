@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" loop autoplay>
+      </audio>
+      <div class="comodo">
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+              <div>
+                <img src="images/aliança.png" alt="" class="aliança" id="aliança" onclick="aliança()">
+                <audio src="sounds/vidros.mp3" id="s-aliança">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/noivo.png" alt="" class="noivo" id="noivo" onclick="noivo()">
+                <audio src="sounds/GritosHomem1.mp3" id="s-noivo">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/terço.png" alt="" class="terço" id="terço" onclick="terço()">
+                <audio src="sounds/terço.mp3" id="s-terço">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/bouquet.png" alt="" class="bouquet" id="bouquet" onclick="bouquet()">
+                <audio src="sounds/bouquet.mp3" id="s-bouquet">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/coroa.png" alt="" class="coroa" id="coroa" onclick="coroa()">
+                <audio src="sounds/coroa.mp3" id="s-coroa">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/noiva.png" alt="" class="noiva" id="noiva" onclick="noiva()">
+                <audio src="sounds/RisoMulher.mp3" id="s-noiva">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/sapato.png" alt="" class="sapato" id="sapato" onclick="sapato()">
+                <audio src="sounds/passos.mp3" id="s-sapato">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtaliança">aliança</p>
+          <p id="txtnoivo">noivo</p>
+          <p id="txtterço">terço</p>
+          <p id="txtbouquet">bouquet</p>
+	    </div>
+		<div class="caderneta--itens">
+          <p id="txtcoroa">coroa</p>
+          <p id="txtnoiva">noiva</p>
+          <p id="txtsapato">sapato</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+
+      <div class="vinheta">
+
+      </div>
+      <script>
+        function aliança(){
+          var elemento = document.getElementById("aliança");
+          elemento.classList.toggle("anim-aliança");
+
+          var elementoTxt = document.getElementById("txtaliança");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-aliança").play();
+        }
+        function noivo(){
+          var elemento = document.getElementById("noivo");
+          elemento.classList.toggle("anim-noivo");
+
+          var elementoTxt = document.getElementById("txtnoivo");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-noivo").play();
+        }
+        function terço(){
+          var elemento = document.getElementById("terço");
+          elemento.classList.toggle("anim-terço");
+
+          var elementoTxt = document.getElementById("txtterço");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-terço").play();
+        }
+        function bouquet(){
+          var elemento = document.getElementById("bouquet");
+          elemento.classList.toggle("anim-bouquet");
+
+          var elementoTxt = document.getElementById("txtbouquet");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-bouquet").play();
+        }
+        function coroa(){
+          var elemento = document.getElementById("coroa");
+          elemento.classList.toggle("anim-coroa");
+
+          var elementoTxt = document.getElementById("txtcoroa");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-coroa").play();
+        }
+        function noiva(){
+          var elemento = document.getElementById("noiva");
+          elemento.classList.toggle("anim-noiva");
+
+          var elementoTxt = document.getElementById("txtnoiva");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-noiva").play();
+        }
+        function sapato(){
+          var elemento = document.getElementById("sapato");
+          elemento.classList.toggle("anim-sapato");
+
+          var elementoTxt = document.getElementById("txtsapato");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-sapato").play();
+        }
+      </script>
+  </div>
+  </body>
+</html>

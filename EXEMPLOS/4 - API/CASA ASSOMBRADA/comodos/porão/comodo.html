@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+              <div>
+                <img src="images/help.png" alt="" class="help" id="help" onclick="help()">
+                <audio src="sounds/gargalhada.mp3" id="s-help">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/crucifixo.png" alt="" class="crucifixo" id="crucifixo" onclick="crucifixo()">
+                <audio src="sounds/maroto.mp3" id="s-crucifixo">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/faca.png" alt="" class="faca" id="faca" onclick="faca()">
+                <audio src="sounds/gargalhada.mp3" id="s-faca">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/jason.png" alt="" class="jason" id="jason" onclick="jason()">
+                <audio src="sounds/maroto.mp3" id="s-jason">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/vela.png" alt="" class="vela" id="vela" onclick="vela()">
+                <audio src="sounds/gargalhada.mp3" id="s-vela">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txthelp">help</p>
+          <p id="txtcrucifixo">crucifixo</p>
+          <p id="txtfaca">faca</p>
+          <p id="txtjason">jason</p>
+          <p id="txtvela">vela</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" loop autoplay>
+      </audio>
+      <script>
+        function help(){
+          var elemento = document.getElementById("help");
+          elemento.classList.toggle("anim-help");
+
+          var elementoTxt = document.getElementById("txthelp");
+          elementoTxt.classList.add("txt-riscado");
+          document.getElementById("s-help").play();
+        }
+        function crucifixo(){
+          var elemento = document.getElementById("crucifixo");
+          elemento.classList.toggle("anim-crucifixo");
+
+          var elementoTxt = document.getElementById("txtcrucifixo");
+          elementoTxt.classList.add("txt-riscado");
+          document.getElementById("s-crucifixo").play();
+        }
+        function faca(){
+          var elemento = document.getElementById("faca");
+          elemento.classList.toggle("anim-faca");
+
+          var elementoTxt = document.getElementById("txtfaca");
+          elementoTxt.classList.add("txt-riscado");
+          document.getElementById("s-faca").play();
+        }
+        function jason(){
+          var elemento = document.getElementById("jason");
+          elemento.classList.toggle("anim-jason");
+
+          var elementoTxt = document.getElementById("txtjason");
+          elementoTxt.classList.add("txt-riscado");
+          document.getElementById("s-jason").play();
+        }
+        function vela(){
+          var elemento = document.getElementById("vela");
+          elemento.classList.toggle("anim-vela");
+
+          var elementoTxt = document.getElementById("txtvela");
+          elementoTxt.classList.add("txt-riscado");
+          document.getElementById("s-vela").play();
+        }
+      </script>
+  </div>
+  </body>
+</html>

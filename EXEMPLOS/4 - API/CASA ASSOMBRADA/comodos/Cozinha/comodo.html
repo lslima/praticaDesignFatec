@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title>Cozinha Assombrada</title>
+  </head>
+  <body>
+    <embed src="sounds/darkshadow.mp3" auto-play="true" hidden="true">
+    <div class="container">
+      <div class="comodo">
+        <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio src="sounds/darkshadow.mp3" loop autoplay>
+        </audio>
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+
+              <div>
+                <img src="images/Faca.png" alt="" class="Faca" id="Faca" onclick="Faca()">
+                <audio src="sounds/Horror.mp3" id="s-Faca">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/Carta1.png" alt="" class="Carta" id="Carta" onclick="Carta()">
+                  <img src="images/FromHellLetter.png" alt="" class="FromHellLetter" id="Card">
+                <audio src="sounds/Grito.mp3" id="s-Carta">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/Wine.png" alt="" class="Vinho" id="Vinho" onclick="Vinho()">
+                <audio src="sounds/VidroQuebrando.mp3" id="s-Vinho">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/Keys.png" alt="" class="Chave" id="Chave" onclick="Chave()">
+                <audio src="sounds/Chave.mp3" id="s-Chave">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                <img src="images/Caveira.png" alt="" class="Caveira" id="Caveira" onclick="Caveira()">
+                <audio src="sounds/Risada.mp3" id="s-Caveira">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+            </div>
+
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtCarta">Carta</p>
+          <p id="txtFaca">Faca</p>
+          <p id="txtVinho">Vinho Derramado</p>
+          <p id="txtChave">Chave</p>
+          <p id="txtCaveira">Crânio Esquecido</p>
+        </div>
+      </div>
+
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <script>
+
+        function Faca(){
+          var elemento = document.getElementById("Faca");
+          elemento.classList.toggle("anim-Global");
+
+          var elementoTxt = document.getElementById("txtFaca");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-Faca").play();}
+
+          function Carta(){
+            var elemento = document.getElementById("Carta");
+            elemento.classList.toggle("anim-Global");
+
+            var elementoTxt = document.getElementById("txtCarta");
+            elementoTxt.classList.add("txt-riscado");
+
+            document.getElementById("s-Carta").play();
+            CartaAppear();}
+
+            function CartaAppear(){
+              var elemento = document.getElementById("Card");
+              elemento.classList.add("anim-Carta");}
+
+            function Vinho(){
+              var elemento = document.getElementById("Vinho");
+              elemento.classList.toggle("anim-Global");
+
+              var elementoTxt = document.getElementById("txtVinho");
+              elementoTxt.classList.add("txt-riscado");
+
+              document.getElementById("s-Vinho").play();}
+
+              function Chave(){
+                var elemento = document.getElementById("Chave");
+                elemento.classList.toggle("anim-Global");
+
+                var elementoTxt = document.getElementById("txtChave");
+                elementoTxt.classList.add("txt-riscado");
+
+                document.getElementById("s-Chave").play();}
+
+                function Caveira(){
+                  var elemento = document.getElementById("Caveira");
+                  elemento.classList.toggle("anim-Global");
+
+                  var elementoTxt = document.getElementById("txtCaveira");
+                  elementoTxt.classList.add("txt-riscado");
+
+                  document.getElementById("s-Caveira").play();}
+
+      </script>
+  </div>
+  </body>
+</html>

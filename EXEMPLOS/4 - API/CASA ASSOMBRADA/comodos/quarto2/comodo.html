@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+              <div>
+                <img src="images/asa2.png" alt="" class="asa" id="asa" onclick="asa()">
+                <audio src="sounds/riso.mp3" id="s-asa">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/mascara1.png" alt="" class="mascara" id="mascara" onclick="mascara()">
+                <audio src="sounds/riso.mp3" id="s-mascara">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+             <div>
+                <img src="images/corvo.png" alt="" class="corvo" id="corvo" onclick="corvo()">
+                <audio src="sounds/riso.mp3" id="s-corvo">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+                 <img src="images/cajado1.png" alt="" class="cajado" id="cajado" onclick="cajado()">
+                 <audio src="sounds/riso.mp3" id="s-cajado">
+                   Seu navegador não suporta elementos de audio
+                 </audio>
+               </div>
+               <div>
+                  <img src="images/fantasia.png" alt="" class="fantasia" id="fantasia" onclick="fantasia()">
+                  <audio src="sounds/riso.mp3" id="s-fantasia">
+                    Seu navegador não suporta elementos de audio
+                  </audio>
+                </div>
+
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtASA">Asa</p>
+          <p id="txtMASCARA">Máscara</p>
+          <p id="txtcajado">Cajado</p>
+          <p id="txtfantasia">Fantasia</p>
+          <p id="txtcorvo">Corvo</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" loop autoplay>
+      </audio>
+      <script>
+        function asa(){
+          var elemento = document.getElementById("asa");
+          elemento.classList.toggle("anim-asa");
+
+          var elementoTxt = document.getElementById("txtASA");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-asa").play();
+        }
+        function mascara(){
+          var elemento = document.getElementById("mascara");
+          elemento.classList.toggle("anim-mascara");
+
+          var elementoTxt = document.getElementById("txtMASCARA");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-mascara").play();
+        }
+
+        function corvo(){
+          var elemento = document.getElementById("corvo");
+          elemento.classList.toggle("anim-corvo");
+
+          var elementoTxt = document.getElementById("txtcorvo");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-corvo").play();
+        }
+        function cajado(){
+          var elemento = document.getElementById("cajado");
+          elemento.classList.toggle("anim-cajado");
+
+          var elementoTxt = document.getElementById("txtcajado");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-cajado").play();
+        }
+        function fantasia(){
+          var elemento = document.getElementById("fantasia");
+          elemento.classList.toggle("anim-fantasia");
+
+          var elementoTxt = document.getElementById("txtfantasia");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-fantasia").play();
+        }
+      </script>
+  </div>
+  </body>
+</html>

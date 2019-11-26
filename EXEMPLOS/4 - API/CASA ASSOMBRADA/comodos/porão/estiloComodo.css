@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/bg.png);
+  position: relative;
+}
+.help{
+  position: absolute;
+  top: 147px;
+  left: 732px;
+  cursor: pointer;
+}
+.crucifixo{
+  position: absolute;
+  top: 458px;
+  right: 348px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.faca{
+  position: absolute;
+  top: 263px;
+  right: 664px;
+  cursor: pointer;
+}
+.jason{
+  position: absolute;
+  top: 225px;
+  right: 509px;
+  cursor: pointer;
+}
+.vela{
+  position: absolute;
+  right: 445px;
+  top: 435px;
+  cursor: pointer;
+}
+.anim-help{
+  animation: help 2s;
+}
+.anim-crucifixo{
+  animation: crucifixo 2s;
+}
+.anim-faca{
+  animation: faca 2s;
+}
+.anim-jason{
+  animation: jason 2s;
+}
+.anim-vela{
+  animation: vela 2s;
+}
+@keyframes help {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+@keyframes crucifixo {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+@keyframes faca {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+@keyframes jason {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+@keyframes vela {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}

@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  background: url(images/fundo.png);
+  position: relative;
+}
+.cavera{
+  position: absolute;
+  top: 359px;
+  left: 133px;
+  cursor: pointer;
+}
+.mao{
+  position: absolute;
+  top: 518px;
+  left: 120px;
+  cursor: pointer;
+}
+.mascara{
+  position: absolute;
+  top: 442px;
+  left: 338px;
+  cursor: pointer;
+}
+.facao{
+  position: absolute;
+  top: 310px;
+  left: 310px;
+  cursor: pointer;
+}
+.chapeu{
+  position: absolute;
+  top: 437px;
+  left: 634px;
+  cursor: pointer;
+}
+
+.ani-cavera{
+  animation: cavera 2.5s both;
+}
+.ani-mao{
+  animation: mao 2.5s both;
+}
+.ani-mascara{
+  animation: mascara 2.5s both;
+}
+.ani-facao{
+  animation: facao 2.5s both;
+}
+.ani-chapeu{
+  animation: chapeu 2.5s both;
+}
+
+@keyframes cavera {
+  0%{transform: rotate(0deg) scale(1);}
+  100%{ transform: rotate(360deg) scale(0);}
+}
+@keyframes mao {
+  0%{transform: rotate(0deg) scale(1);}
+  100%{ transform: rotate(360deg) scale(0);}
+}
+@keyframes mascara {
+  0%{transform: rotate(0deg) scale(1);}
+  100%{ transform: rotate(360deg) scale(0);}
+}
+@keyframes facao {
+  0%{transform: rotate(0deg) scale(1);}
+  100%{ transform: rotate(360deg) scale(0);}
+
+}
+@keyframes chapeu {
+  0%{transform: rotate(0deg) scale(1);}
+  100%{ transform: rotate(360deg) scale(0);}
+}
+
+/*
+
+@keyframes #### {
+  0%{transform: scale(1);}
+  20%{transform: scale(2);}
+  50%{ transform: scale(1);}
+}
+
+*/

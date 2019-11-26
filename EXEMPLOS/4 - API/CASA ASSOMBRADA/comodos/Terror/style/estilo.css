@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans:400,600&display=swap');
+body{
+
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	background-image: url('../imagens/fundo_madeira.png');
+}
+
+.pergaminho{
+
+	width: 300px;
+	position: absolute;
+	top: 300px;
+	left: 0px;
+
+}
+
+.palavras{
+
+	position: absolute;
+	top: 350px;
+	left: 80px;
+	font-size:24px;
+
+}
+
+
+.moldura{
+	position: absolute;
+}
+
+.cenario{
+	position: relative;
+	padding: 100px;
+}
+
+.escada{
+	position: absolute;
+	top: 270px;
+	left: 380px;
+}
+
+.cabeca{
+	position: absolute;
+	top: 410px;
+	right: 200px;
+	width: 70px;
+	opacity: 0.0;
+
+}
+
+.porta{
+	position: absolute;
+	top: 523px;
+	right: 485px;
+	opacity: 0.0;
+
+}
+
+
+.sombra{
+	position: absolute;
+	top: 450px;
+	right: 150px;
+	opacity: 0.0;
+}
+
+.caixao{
+	position: absolute;
+	top: 472px;
+	left: 345px;
+	opacity: 0.0;
+}
+
+.mulher{
+	position: absolute;
+	top: 310px;
+	left: 480px;
+	opacity: 0.0;
+}
+
+
+.txt-riscado{
+  text-decoration: line-through;
+}
+
+@keyframes lareira {
+  0%{opacity: 0.0;}
+  100%{opacity: 1.0;
+  		visibility: visible;	
+
+  		}
+
+}
+
+.anim-lareira{
+  animation: lareira 9s;
+}
+
+
+@keyframes caixao {
+  0%{opacity: 0.0;}
+  100%{opacity: 1.0;
+  	  
+  			
+  		}
+
+}
+
+.anim-caixao{
+  animation: caixao 9s;
+
+}
+
+
+
+
+@keyframes cabeca {
+  0%{opacity: 0.0;}
+  100%{opacity: 1.0;
+  	  
+  			
+  		}
+
+}
+
+.anim-cabeca{
+  animation: cabeca 9s;
+
+}
+
+
+
+@keyframes mulher {
+  0%{opacity: 0.0;}
+  100%{opacity: 1.0;
+  	  
+  			
+  		}
+
+}
+
+.anim-mulher{
+  animation: mulher 9s;
+
+}
+
+
+@keyframes sombra {
+  0%{opacity: 0.0;}
+  100%{opacity: 1.0;
+  	  
+  			
+  		}
+
+}
+
+.anim-sombra{
+  animation: sombra 9s;
+
+}
+
+p{
+
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Luckiest Guy', cursive;
+
+
+
+}

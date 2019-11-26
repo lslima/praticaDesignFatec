@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title>Casa Assombrada</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+
+            <div class="cont-comodo">
+
+              <div>
+                <img src="images/cenario.png" alt="" class="cenario" id="cenario" onclick="cenario()">
+                <audio src="sounds/apito.mp3" id="cenario">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+              <div>
+               <img src="images/cavaleiro.png" alt="" class="cavaleiro" id="cavaleiro" onclick="cavaleiro()">
+                <audio src="sounds/apito.mp3" id="som-cavaleiro"></audio>
+              </div>
+
+              <div>
+               <img src="images/dentadura.png" alt="" class="dentadura" id="dentadura"  onclick="dentadura()">
+              </div>
+
+              <div>
+               <img src="images/cranio.png" alt="" class="cranio" id="cranio"  onclick="cranio()">
+              </div>
+
+               <div>
+               <img src="images/cadeira.png" alt="" class="cadeira" id="cadeira">
+              </div>
+
+              <div>
+               <img src="images/esqueletosentado.png" alt="" class="esqueletosentado" id="esqueletosentado">
+              </div>
+
+              <div>
+               <img src="images/esqueleto1.png" alt="" class="esqueleto1" id="esqueleto1"  onclick="esqueleto1()">
+              </div>
+
+               <div>
+               <img src="images/esqueleto2.png" alt="" class="esqueleto2" id="esqueleto2">
+              </div>
+
+               <div>
+               <img src="images/zumbi1.png" alt="" class="zumbi1" id="zumbi1">
+              </div>
+
+               <div>
+               <img src="images/mumia.png" alt="" class="mumia" id="mumia" onclick="mumia()" >
+              </div>
+
+              <div>
+               <img src="images/quadro.png" alt="" class="quadro" id="quadro"  onclick="quadro()">
+              </div>
+
+              <div>
+               <img src="images/sangue1.png" alt="" class="sangue1" id="sangue1">
+              </div>
+
+              <div>
+               <img src="images/sangue2.png" alt="" class="sangue2" id="sangue2">
+              </div>
+
+              <div>
+               <img src="images/sangue3.png" alt="" class="sangue3" id="sangue3">
+              </div>
+
+              <div>
+               <img src="images/sangue4.png" alt="" class="sangue4" id="sangue4">
+              </div>
+
+              <div>
+                <img src="images/sangue5.png" alt="" class="sangue5" id="sangue5">
+              </div>
+
+               <div>
+               <img src="images/sapato.png" alt="" class="sapato" id="sapato">
+              </div>
+
+               <div>
+               <img src="images/mancha1.png" alt="" class="mancha1" id="mancha1">
+              </div>
+
+              <div>
+               <img src="images/mancha2.png" alt="" class="mancha2" id="mancha2">
+              </div>
+
+               <div>
+               <img src="images/mancha3.png" alt="" class="mancha3" id="mancha3">
+              </div>
+
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtdentadura">Dentadura</p>
+          <p id="txtcranio">crânio</p>
+          <p id="txtesqueleto1">esqueleto</p>
+          <p id="txtmumia">múmia</p>
+          <p id="txtquadro">quadro</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" loop="" autoplay="">
+      </audio>
+      <script>
+        function dentadura(){
+          var elemento = document.getElementById("dentadura");
+          elemento.classList.toggle("anim-dentadura");
+
+          var elementoTxt = document.getElementById("txtdentadura");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("som-dentadura").play();
+        }
+
+        function cranio(){
+          var elemento = document.getElementById("cranio");
+          elemento.classList.toggle("anim-cranio");
+
+          var elementoTxt = document.getElementById("txtcranio");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("som-cranio").play();
+        }
+
+        function esqueleto1(){
+          var elemento = document.getElementById("esqueleto1");
+          elemento.classList.toggle("anim-esqueleto1");
+
+          var elementoTxt = document.getElementById("txtesqueleto1");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("som-esqueleto1").play();
+        }
+
+      function mumia(){
+      var elemento = document.getElementById("mumia");
+      elemento.classList.toggle("anim-mumia");
+
+      var elementoTxt = document.getElementById("txtmumia");
+      elementoTxt.classList.add("txt-riscado");
+
+    document.getElementById("som-mumia").play();  }
+
+    function quadro(){
+    var elemento = document.getElementById("quadro");
+    elemento.classList.toggle("anim-quadro");
+
+    var elementoTxt = document.getElementById("txtquadro");
+    elementoTxt.classList.add("txt-riscado");
+
+  document.getElementById("som-quadro").play();  }
+      </script>
+  </div>
+  </body>
+</html>

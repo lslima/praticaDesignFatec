@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+<div class="container">
+  <div class="comodo">
+    <div class="cont-comodo">
+      <div class="saci">
+         <img src="images/esqueletosaci.png" alt="esqueletodeumaperna3d" id="saci"  onclick="saci()">
+         <audio src="sounds/saci.wav" id="s-saci"> </audio>
+
+      </div>
+          <div class="arvore">
+        <img src="images/arvore.png" alt="arvore3d" id="arvore"  onclick="arvore()">
+        </div>
+
+        <div class="cobra">
+        <img src="images/cobra.png" alt="cobra3d" id="cobra"  onclick="cobra()">
+        <audio src="sounds/cobra.mp3" id="s-cobra"> </audio>
+        </div>
+
+        <div class="cruz">
+        <img src="images/cruz.png" alt="cruz3d" id="cruz"  onclick="cruz()">
+         <audio src="sounds/cruz.mp3" id="s-cruz"> </audio>
+
+        </div>
+
+
+        <div class="folhas">
+        <img src="images/folhas.png" alt="folhas3d">
+        </div>
+        <div class="folhasdois">
+        <img src="images/folhas.png" alt="folhas3d">
+        </div>
+
+        <div class="aranha">
+        <img src="images/aranha.gif" alt="aranha3d"  id="aranha"  onclick="aranha()">
+         <audio src="sounds/aranha.wav" id="s-aranha"> </audio>
+        </div>
+
+
+        <div class="galhos">
+        <img src="images/galhos.png" alt="galhos"  id="galhos"  onclick="galhos()">
+        </div>
+        <div class="galhosdois">
+        <img src="images/galhos.png" alt="galhos3d">
+        </div>
+
+
+
+        <div class="caveiratrono">
+        <img src="images/caveiratrono.png" alt="esqueleto3d" id="caveiratrono"  onclick="caveiratrono()">>
+         <audio src="sounds/caveiratrono.mp3" id="s-caveiratrono"> </audio>
+        </div>
+
+
+        <div class="martelo">
+         <img src="images/martelo.png" alt="martelo3d" id="martelo"  onclick="martelo()">
+       <audio src="sounds/martelo.mp3" id="s-martelo"> </audio>
+        </div>
+
+
+
+        <div class="sapo">
+        <img src="images/sapo.png" alt="sapo3d" id="sapo"  onclick="sapo()">
+          <audio src="sounds/flog.wav" id="s-flog"> </audio>
+        </div>
+        <div class="bigorna">
+        <img src="images/bigorna.png" alt="bigorna3d">
+        </div>
+        <div class="coruja">
+         <img src="images/coruja.png" alt="coruja3d" id="coruja"  onclick="coruja()">
+          <audio src="sounds/coruja.wav" id="s-coruja"> </audio>
+        </div>
+
+
+       <div class="arbustro">
+         <img src="images/arbustro.png" alt="arbustro3d">
+       </div>
+        <div class="ferradura">
+          <img src="images/ferradura.png" alt="ferradura3d" id="ferradura"  onclick="ferradura()">
+          <audio src="sounds/ferradura.wav" id="s-ferradura"> </audio>
+        </div>
+
+
+              <div class="mula">
+         <img src="images/mula.png" alt="mula3d" id="mula"  onclick="mula()">
+          <audio src="sounds/mula.mp3" id="s-mula"> </audio>
+       </div>
+        <div class="pedra">
+       <img src="images/pedra.png" alt="pedra3d">
+       </div>
+    </div>
+  </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtsaci">Esqueleto do Saci</p>
+          <p id="txtcruz">Cruz</p>
+          <p id="txtaranha">Aranha</p>
+            <p id="txtmartelo">Martelo</p>
+        <p id="txtferradura">Ferradura</p>
+          <p id="txtcobra">Cobra</p>
+          </div>
+      </div>
+      <div class="moeda">
+        <a href="../../index.html">
+          <img src="../../images/moeda.png" alt="">
+        </a>
+      </div>
+      <div class="vinheta">
+
+      </div>
+
+
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio src="sounds/ventoBg.mp3" loop autoplay>
+</audio>
+
+      <script>
+
+        function cruz(){
+          var elemento = document.getElementById("cruz");
+          elemento.classList.toggle("anim-cruz");
+
+          var elementoTxt = document.getElementById("txtcruz");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-cruz").play();
+        }
+
+          function bicicleta(){
+        var elemento = document.getElementById("bicicleta");
+            elemento.classList.toggle("anim-bicicleta");
+
+        var elementoTxt = document.getElementById("txtbicicleta");
+        elementoTxt.classList.add("txt-riscado");
+
+        document.getElementById("s-bicicleta").play();
+
+      }
+
+      function aranha(){
+    var elemento = document.getElementById("aranha");
+        elemento.classList.toggle("anim-aranha");
+
+    var elementoTxt = document.getElementById("txtaranha");
+    elementoTxt.classList.add("txt-riscado");
+
+    document.getElementById("s-aranha").play();
+
+  }
+
+  function caveiratrono(){
+var elemento = document.getElementById("caveiratrono");
+    elemento.classList.toggle("anim-caveiratrono");
+
+document.getElementById("s-caveiratrono").play();
+
+}
+
+
+
+        function mula(){
+      var elemento = document.getElementById("mula");
+          elemento.classList.toggle("anim-mula");
+
+              document.getElementById("s-mula").play();
+
+            }
+
+                      function coruja(){
+                    var elemento = document.getElementById("coruja");
+                        elemento.classList.toggle("anim-coruja");
+
+                            document.getElementById("s-coruja").play();
+
+}
+
+
+function  sapo(){
+var elemento = document.getElementById("sapo");
+  elemento.classList.toggle("anim-sapo");
+
+      document.getElementById("s-flog").play();
+
+}
+
+function  arvore(){
+var elemento = document.getElementById("saci");
+  elemento.classList.toggle("anim-saci");
+
+  var elementoTxt = document.getElementById("txtsaci");
+  elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-saci").play();
+
+}
+
+function  galhos(){
+var elemento = document.getElementById("cobra");
+  elemento.classList.toggle("anim-cobra");
+
+  var elementoTxt = document.getElementById("txtcobra");
+  elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-cobra").play();
+
+}
+
+
+
+function  ferradura(){
+var elemento = document.getElementById("ferradura");
+  elemento.classList.toggle("anim-ferradura");
+
+  var elementoTxt = document.getElementById("txtferradura");
+  elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-ferradura").play();
+
+}
+
+function  martelo(){
+var elemento = document.getElementById("martelo");
+  elemento.classList.toggle("anim-martelo");
+
+  var elementoTxt = document.getElementById("txtmartelo");
+  elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-martelo").play();
+
+}
+
+
+
+
+function  cobra(){
+var elemento = document.getElementById("cobra");
+  elemento.classList.toggle("anim-cobra");
+
+  var elementoTxt = document.getElementById("txtcobra");
+  elementoTxt.classList.add("txt-riscado");
+
+      document.getElementById("s-cobra").play();
+
+}
+
+
+
+      </script>
+  </div>
+  </body>
+</html>
